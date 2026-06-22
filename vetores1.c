@@ -4,16 +4,16 @@
 
 int main() 
 {   
-    int vet1[10], vet2[8], soma = 0, vet3[10], maior, posmaior, menor, posmenor, vet4[6];
+    int vet1[10], vet2[8], soma = 0, vet3[10], maior, posmaior, menor, posmenor, vet4[6], notaspos = 0;
     float media;
 //1-Leitura e apresentação de valores
 //Lê 10 números inteiros para um vetor.
     /*for(int i = 0; i < 10; i++) {
-        printf("Digite um numero: ", i + 1);
+        printf("Digite um numero: ", (i + 1));
         scanf("%d", &vet1[i]);
     }
 //Mostra todos os valores introduzidos.
-    for(int i = 0; i < 10; i++ ) {
+    for(int i = 0; i < 10; i++) {
         printf(" %d | ", vet1[i]);
     }
     printf("\n");
@@ -29,10 +29,10 @@ int main()
     for(int i = 0; i < 8; i++ ) {
         printf(" %d | ", vet2[i]);
     }printf("\n");
-    printf("A soma de todos os elementos e: %d ", soma);*/
+    printf("A soma de todos os elementos e: %d ", soma);
 //3- Maior e menor valor
 //Lê 10 números inteiros para um terceiro vetor.
-    /*for(int i = 0; i < 10; i++ ) {
+    for(int i = 0; i < 10; i++ ) {
         printf("Digite um numero: ", i + 1);
         scanf("%d", &vet3[i]);
     }
@@ -73,16 +73,17 @@ int main()
         printf(" %d | ", vet4[i]);
     }
     printf("\n"); 
-//Calcula e apresenta a média das notas.
+//Calcula e apresenta a média das notas. Indica também quantas notas são positivas (≥ 10).
     for(int i = 0; i < 6; i++) {
         soma = soma + vet4[i];
-        if(vet4[i] > media) {
-            media = soma / 6;
-            printf("%d", &vet4[i]);
-        }
-        
+       if(vet4[i] >= 10) {
+            notaspos++;   
+       } 
     }
+    media = soma / 6;
+    
     printf("A media das notas e: %.2f", media);
+    printf("E %d notas positivas foram inseridas", notaspos);
     
     printf("\n");
 
