@@ -2,7 +2,8 @@
 
 int main() {
 
-    int linhas, colunas, soma = 0, maior = 0, poslinhamaior = 0, poscolmaior = 0, somadiagonal = 0, par;
+    int linhas, colunas, soma = 0, maior = 0, poslinhamaior = 0, poscolmaior = 0, somadiagonal = 0, par = 0;
+
     printf("Insira o numero de linhas: ");
     scanf("%d", &linhas);
     printf("Insira o numero de colunas: ");
@@ -16,7 +17,7 @@ int main() {
             soma = soma + matriz[i][j]; //Calcula a soma de todos os seus elementos.
             if(matriz[i][j] %2 == 0) {
                 par += 1;
-            } 
+            }
         }
     }
     printf("\nImprimindo a matriz\n");
@@ -24,43 +25,45 @@ int main() {
     for(int i = 0; i < linhas; i++){
         printf("\n");
         for(int j = 0; j < colunas; j++) {            
-            printf("linha %d | coluna %d = %d ", i, j, matriz[i][j]);   
+            printf("linha %d | coluna %d = %d ", i, j, matriz[i][j]);
         }
     }
     printf("\n\n");
-    printf("Soma dos %d os elementos e de: %d", (linhas * colunas), soma); //apresenta a soma de todos os seus elementos.
+    printf("Soma dos %d os elementos e de: %d \n", (linhas * colunas), soma); //apresenta a soma de todos os seus elementos.
 
-    for(int i = 0; i < linhas; i++){
+    /*for(int i = 0; i < linhas; i++){
         printf("\n");
         for(int j = 0; j < colunas; j++) {            
             printf("linha %d | coluna %d = %d ", i, j, matriz[i][j]);   
         }
-    }
-    maior = matriz[0][0];
+    }*/
     for(int i = 0; i < linhas; i++) {
         for(int j = 0; j < colunas; j++) {
-            printf("%d ", matriz[i][j]);
+            /*printf("%d ", matriz[i][j]);*/
             if(matriz[i][j] > maior) {
-             maior = matriz[i][j];
-             poslinhamaior = i;
-             poscolmaior = j;   
+                maior = matriz[i][j];
+                poslinhamaior = i;
+                poscolmaior = j;   
             }          
-            printf("O maior valor existente na matriz é: %d, que esta na linha %d e coluna %d ", matriz, poslinhamaior+1, poscolmaior+1);
-            printf("Existem %d numeros pares nessa matriz. ", par);
         }
+        printf("\n");
     }
+    /*printf("Soma = %d\n", soma);*/
+    printf("O maior valor existente na matriz e: %d , que esta na linha %d e coluna %d. \n", maior, (poslinhamaior + 1), (poscolmaior + 1));
+    printf("Existem %d numeros pares nessa matriz. \n", par);
+    
     for(int i = 0; i < linhas; i++) {
         for(int j = 0; j < colunas; j++) {
-            printf("%d ", matriz[i][j]);
             if(i == j) {
-             printf("%d", matriz[i][j]);
-             somadiagonal += matriz[i][j];
+                printf("%d\n", matriz[i][j]);
+                somadiagonal += matriz[i][j];
             }
             else {
                 printf(" ");
             }
-            printf("\n");       
+                 
         }
-    }       
+    }
+    printf("Soma diagonal = %d\n", somadiagonal);       
     return 0;
 }
