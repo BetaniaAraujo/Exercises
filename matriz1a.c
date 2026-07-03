@@ -29,7 +29,7 @@ int main() {
         }
     }
     printf("\n\n");
-    printf("Soma dos %d os elementos e de: %d \n", (linhas * colunas), soma); //apresenta a soma de todos os seus elementos.
+    printf("Soma dos %d elementos e de: %d \n", (linhas * colunas), soma); //apresenta a soma de todos os seus elementos.
 
     /*for(int i = 0; i < linhas; i++){
         printf("\n");
@@ -60,8 +60,7 @@ int main() {
             }
             else {
                 printf(" ");
-            }
-                 
+            }       
         }
     }
     printf("Soma diagonal = %d\n", somadiagonal);       
