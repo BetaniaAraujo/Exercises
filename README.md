@@ -1,2 +1,2 @@
-# C#
+# C
 Exercises developed during training.
