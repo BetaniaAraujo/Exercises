@@ -1,2 +1,2 @@
-# C
-Exercises developed during training.
+# Learning in C language
+Exercises developed during class.
