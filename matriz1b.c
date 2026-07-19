@@ -75,14 +75,14 @@ int main() {
     printf("\n");
     if(SomaDiagonalP > SomaDiagonalP) {
         printf("A soma da matriz principal e superior em %d .", (SomaDiagonalP-SomaDiagonalS));
-    } else {
+    } 
+    else {
         printf("A soma da matriz secundaria e superior em %d .", (SomaDiagonalS-SomaDiagonalP));
-        }
     }
     printf("\n");
     for(int i = 0; i < linhas; i++) {
         for(int j = 0; j < colunas; j++) {
-            printf("Matriz 1 [%d][%d] - %d | Matriz 2 [%d][%d] - %d\n", (i+1), (j+1), matriz[i][j], (i+1), (j+1), matriz2[i][j],);
+            printf("Matriz 1 [%d][%d] - %d | Matriz 2 [%d][%d] - %d\n", (i+1), (j+1), matriz[i][j], (i+1), (j+1), matriz2[i][j]);
         }
     }
     printf("\n");

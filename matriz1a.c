@@ -2,7 +2,7 @@
 
 int main() {
 
-    int linhas, colunas, soma = 0, maior = 0, poslinhamaior = 0, poscolmaior = 0, somadiagonal = 0, par = 0;
+    int linhas, colunas, soma = 0, maior = 0, posLinhaMaior = 0, posColMaior = 0, somaDiagonal = 0, par = 0;
 
     printf("Insira o numero de linhas: ");
     scanf("%d", &linhas);
@@ -12,7 +12,7 @@ int main() {
 //Lê uma matriz 3×3 de números inteiros.
     for(int i = 0; i < linhas; i++) {
         for(int j = 0; j < colunas; j++) {            
-            printf("Insira dados da posicao: linha %d coluna %d: ", (i+1), (j+1));
+            printf("Insira dados da posição: linha %d coluna %d: ", (i+1), (j+1));
             scanf("%d", &matriz[i][j]);
             soma = soma + matriz[i][j]; //Calcula a soma de todos os seus elementos.
             if(matriz[i][j] %2 == 0) {
@@ -42,27 +42,27 @@ int main() {
             /*printf("%d ", matriz[i][j]);*/
             if(matriz[i][j] > maior) {
                 maior = matriz[i][j];
-                poslinhamaior = i;
-                poscolmaior = j;   
+                posLinhaMaior = i;
+                posColMaior = j;   
             }          
         }
         printf("\n");
     }
     /*printf("Soma = %d\n", soma);*/
-    printf("O maior valor existente na matriz e: %d , que esta na linha %d e coluna %d. \n", maior, (poslinhamaior + 1), (poscolmaior + 1));
-    printf("Existem %d numeros pares nessa matriz. \n", par);
+    printf("O maior valor existente na matriz e: %d , que esta na linha %d e coluna %d. \n", maior, (posLinhaMaior + 1), (posColMaior + 1));
+    printf("Existem %d números pares nessa matriz. \n", par);
     
     for(int i = 0; i < linhas; i++) {
         for(int j = 0; j < colunas; j++) {
             if(i == j) {
                 printf("%d\n", matriz[i][j]);
-                somadiagonal += matriz[i][j];
+                somaDiagonal += matriz[i][j];
             }
             else {
                 printf(" ");
             }       
         }
     }
-    printf("Soma diagonal = %d\n", somadiagonal);       
+    printf("Soma diagonal = %d\n", somaDiagonal);       
     return 0;
 }
