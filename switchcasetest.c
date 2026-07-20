@@ -4,12 +4,12 @@ int main() {
     //Ler números
     int numero1, numero2, total;
     char operacao;
-    printf("Digite primeiro número: ");
+    printf("Digite primeiro numero: ");
     scanf("%d", &numero1);
-    printf("Digite segundo número: ");
+    printf("Digite segundo numero: ");
     scanf("%d", &numero2);
     //Escolher uma operação
-    printf("Escolha uma operação matemática: ");
+    printf("Escolha uma operação matematica: ");
     scanf(" %c", &operacao);
     //Calcular os números
     switch (operacao)
@@ -27,7 +27,7 @@ int main() {
         total = numero1 / numero2;
         break;
     default:
-        printf("Operação inválida!\n");
+        printf("Operacao invalida!\n");
         return 1;
     }
     printf("Resultado = %d\n", total);
