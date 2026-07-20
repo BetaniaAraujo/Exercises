@@ -3,7 +3,7 @@
 
 int main() {
 
-    int CapTanque, VolAtual; LitrosCompl
+    int CapTanque, VolAtual, LitrosCompl;
     float Combustivel = 5.80, CustoTotal;
 //Descobrir quantos litros faltam para encher o tanque
     printf("Qual a capacidade do tanque: ");
@@ -11,13 +11,11 @@ int main() {
     printf("Quantos litros ha no tanque: ");
     scanf("%d", &VolAtual);
 
-    LitrosCompl = CapTanque - VolAtual;
-    scanf("%d", &LitrosCompl);
-    printf("Faltam %d litros para completar o tanque", LitrosCompl);
+    LitrosCompl = CapTanque-VolAtual;
+    printf("Faltam %d litros para completar o tanque.\n", LitrosCompl);
 //Pegar o custo de 1 litro e multiplicar pelo resultado do passo 1
-        
-
-    printf("O custo para completar o tanque e: ", CustoTotal )
+    CustoTotal = LitrosCompl*Combustivel;        
+    printf("O custo para completar o tanque e: %.2f ", CustoTotal);
 
     return 0;
 }
