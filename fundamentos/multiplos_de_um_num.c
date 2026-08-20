@@ -1,5 +1,8 @@
+/*/Mostra todos os múltiplos de 3 entre 1 e 100.*/
+/*Resolusão sugerida pelo prof*/
+
 #include <stdio.h>
-// Mostra todos os múltiplos de 3 entre 1 e 100.
+
 int main()
 {
     int num1, num2, troca;
@@ -20,5 +23,7 @@ int main()
         }
     }
     
-return 0;
+    printf("---------FIM DE PROGRAMA--------\n");
+    
+    return 0;
 }

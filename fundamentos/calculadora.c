@@ -4,9 +4,9 @@ int main() {
     //Ler números
     int numero1, numero2, total;
     char operacao;
-    printf("Digite primeiro numero: ");
+    printf("Digite 1º numero: ");
     scanf("%d", &numero1);
-    printf("Digite segundo numero: ");
+    printf("Digite 2º numero: ");
     scanf("%d", &numero2);
     //Escolher uma operação
     printf("Escolha uma operação matematica: ");
@@ -31,6 +31,8 @@ int main() {
         return 1;
     }
     printf("Resultado = %d\n", total);
+
+    printf("---------FIM DE PROGRAMA--------\n");
     
     return 0;
     

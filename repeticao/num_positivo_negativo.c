@@ -1,3 +1,6 @@
+
+/*Pede ao utilizador um número positivo.Enquanto o número for negativo ou zero, o programa deve voltar a pedir o número.*/
+
 #include <stdio.h>
 
 int main() {
@@ -14,6 +17,7 @@ int numero;
 
     printf("O número digitado foi: %d\n", numero);
         
+    printf("---------FIM DE PROGRAMA--------\n");
     
     return 0;
 }

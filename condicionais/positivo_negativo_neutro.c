@@ -1,7 +1,9 @@
+/*Dizer se números POSITIVOS/NEGATIVOS/NEUTRO*/
+
 #include <stdio.h>
 
 int main() {
-    //Dizer se números POSITIVOS/NEGATIVOS/NEUTRO
+    
     int numero;
     printf("Digite um número: ");
     scanf("%d", &numero);
@@ -13,6 +15,8 @@ int main() {
     } else{
         printf("0");
     }
+    
+    printf("---------FIM DE PROGRAMA--------\n");
     
     return 0;
     

@@ -16,6 +16,8 @@ int main() {
         printf("Ímpar");
     }
 
+    printf("---------FIM DE PROGRAMA--------\n");
+    
     return 0;
     
 }
