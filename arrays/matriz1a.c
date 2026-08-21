@@ -1,3 +1,7 @@
+/*Leitura e apresentação de uma matriz 3×3
+• Lê uma matriz 3×3 de números inteiros.
+• Mostra a matriz no ecrã em formato de tabela.*/
+
 #include <stdio.h>
 
 int main() {
@@ -9,7 +13,7 @@ int main() {
     printf("Insira o numero de colunas: ");
     scanf("%d", &colunas);
     int matriz[linhas][colunas];
-//Lê uma matriz 3×3 de números inteiros.
+//Lê uma matriz num × num de números inteiros.
     for(int i = 0; i < linhas; i++) {
         for(int j = 0; j < colunas; j++) {            
             printf("Insira dados da posição: linha %d coluna %d: ", (i+1), (j+1));
@@ -25,7 +29,7 @@ int main() {
     for(int i = 0; i < linhas; i++){
         printf("\n");
         for(int j = 0; j < colunas; j++) {            
-            printf("linha %d | coluna %d = %d ", i, j, matriz[i][j]);
+            printf("linha [%d] coluna [%d] = %d | ", i, j, matriz[i][j]);
         }
     }
     printf("\n\n");
